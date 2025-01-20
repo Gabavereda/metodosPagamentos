@@ -1,0 +1,166 @@
+body,
+html {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#cima,
+#abaixo {
+    width: 100%;
+    height: 15%;
+    background-color: #1e2b1b;
+    color: #f8f8f8;
+    border-top: 4px solid #DD4C0D;
+    box-shadow: 0 -10px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#informarDados {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 0em;
+    margin-top: 5em;
+    font-size: 20px;
+}
+
+#labelTxt,
+#PagarCartao {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+}
+
+#valorDigitado {
+    border: 1px solid #ccc;
+    border-radius: 0.2em;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#abrirForm {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#abrirForm:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+#divPix {
+    margin-top: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#inputCpf {
+    text-align: center;
+    display: inline-block;
+    padding: 1em;
+    padding-top: 0em;
+    border: 2px solid black;
+}
+
+#valorCalculadoPix,
+#TotalCalculoCartao {
+    margin-top: 1em;
+    margin-left: 11em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#TotalCalculoCartao,
+#TotalCalculoPix {
+    color: red;
+}
+
+#cpf {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+}
+
+#PagarPix {
+    height: 2em;
+    width: 5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 1em;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#PagarPix:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+#cartaoCredito {
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    border: 2px solid black;
+    padding: 3em;
+    border-radius: 5px;
+    margin-top: 0em;
+    margin-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cartaoCredito input,
+#cartaoCredito select {
+    width: 80%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#card1,
+#card2 {
+    width: 2em;
+    position: absolute;
+}
+
+#PagarCartao {
+    height: 2em;
+    width: 5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 1em;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#btnPagarCartao:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+
+#conteudo {
+    flex: 1;
+    width: 100%;
+    background-color: #f0f0f0;
+}
