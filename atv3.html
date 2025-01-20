@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Atividade3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="atv3.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="atv3.js"></script>
+</head>
+
+<div id="cima">
+
+    <h1>Pagamento Pix/Cartão de crédito</h1>
+</div>
+
+<div id="conteudo">
+    <div id="informarDados">
+        <label id="labelTxt" for="valorDigitado">Valor</label>
+        <input type="text" id="valorDigitado">
+        <br>
+        <br>
+        <input type="radio" id="labelTxt" name="opcoes-pagamento" value="pix">
+        <label for="formaPagar1">PIX</label>
+
+        <input type="radio" id="labelTxt" name="opcoes-pagamento" value="cartao">
+        <label for="formaPagar2">Cartão de Crédito</label>
+
+        <br><br>
+        <input type="submit" id="abrirForm" value="informar Dados"> </input>
+    </div>
+
+    <div id="divPix">
+        <div id="inputCpf">
+            <h2 id="tituloPix">Pix</h2>
+
+
+            <label id="labelTxt" for="cpf">CPF:</label>
+            <input type="text" name="cpfUsuario" id="cpf" required title="Por favor preencha esse campo">
+        </div>
+        <div id="valorCalculadoPix">
+            <span id="TotalCalculoPix">Total R$:0.00</span>
+        </div>
+
+        <div id="valorTotal">
+            <button id="PagarPix" value="Pagar">Pagar</button>
+        </div>
+    </div>
+
+
+    <div id="cartaoCredito">
+
+        <div class="logoCartao">
+
+            <h2 id="tituloCartao">Cartão de Crédito</h2>
+            <label for="numeroCartao">Número:</label>
+            <input type="text" id="numeroCartao">
+
+            <img id="card1" src="cartao 1.png" alt="logo1">
+            <img id="card2" src="cartao 2.png" alt="logo2">
+
+            <br>
+            <span id="cartaoInvalido" style="font-size: medium; font-weight: bolder; color: red;">Cartão inválido</span>
+            <br><br>
+
+            <label for="titularCartao"> Titular: </label>
+            <input type="text" id="titularCartao">
+            <BR>
+
+            <label for="csv">Cód. Segurança:</label>
+            <input type="text" id="csv">
+
+            <br>
+            <label for="vencimento">Vencimento:</label>
+            <input type="text" id="vencimento">
+        </div>
+
+        <label for="selecionarParcelas" id="labelParcelas">Parcelas:</label>
+        <select name="atuacao" id="selecionarParcelas">
+            <option value="1x">1x</option>
+            <option value="2x">2x</option>
+            <option value="3x">3x</option>
+            <option value="4x">4x</option>
+            <option value="5x">5x</option>
+        </select>
+
+
+        <div id="valorCalculadoCartao">
+            <span id="TotalCalculoCartao">Total R$:0.00</span>
+        </div>
+        <br><br>
+        <div id="btnPagarCartao">
+            <button id="PagarCartao" value="Pagar">Pagar</button>
+        </div>
+
+
+    </div>
+</div>
+
+<div id="abaixo">
+    <h1>Pagamento Pix/Cartão de crédito</h1>
+</div>
+</body>
+
+</html>
